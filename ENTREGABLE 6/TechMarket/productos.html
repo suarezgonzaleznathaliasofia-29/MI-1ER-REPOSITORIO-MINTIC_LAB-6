@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TechMarket - Productos</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner d-flex align-items-center justify-content-between">
+        <h1 class="brand mb-0">TechMarket</h1>
+
+        <nav class="main-nav d-flex align-items-center">
+          <a class="nav-link" href="index.html">Inicio</a>
+          <a class="nav-link" href="productos.html">Productos</a>
+          <a class="nav-link" href="acercade.html">Acerca de</a>
+          <a class="nav-link" href="contacto.html">Contacto</a>
+
+          <a class="nav-link ms-3 d-flex align-items-center" href="carrito.html">
+            <i class="bi bi-cart-fill" style="font-size:1.15rem"></i>
+            <span id="contadorCarrito" class="badge bg-purple text-white ms-1">0</span>
+          </a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="container mt-5">
+    <h2 class="text-center mb-4">Nuestros Productos</h2>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+      <!-- Producto 1 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="assets/img/producto1.jpg" class="card-img-top product-img" alt="Smartphone X">
+          <div class="card-body">
+            <h5 class="card-title">Smartphone X</h5>
+            <p class="card-text">Pantalla AMOLED, 128GB, Cámara 50MP.</p>
+            <button class="btn btn-primary w-100" onclick="agregarProducto('Smartphone X', 1599000)">
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="assets/img/producto2.jpg" class="card-img-top product-img" alt="Laptop Pro">
+          <div class="card-body">
+            <h5 class="card-title">Laptop Pro</h5>
+            <p class="card-text">Intel i7, 16GB RAM, SSD 512GB.</p>
+            <button class="btn btn-primary w-100" onclick="agregarProducto('Laptop Pro', 3849000)">
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="assets/img/producto3.jpg" class="card-img-top product-img" alt="Audífonos Wireless">
+          <div class="card-body">
+            <h5 class="card-title">Audífonos Wireless</h5>
+            <p class="card-text">Cancelación de ruido, Bluetooth 5.3.</p>
+            <button class="btn btn-primary w-100" onclick="agregarProducto('Audífonos Wireless', 289000)">
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer mt-5">
+    <div class="container text-center py-3">© 2025 TechMarket - Todos los derechos reservados.</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/app.js"></script>
+  <!-- TOAST -->
+<div id="toast" class="toast-notify">Producto agregado</div>
+</body>
+</html>
+
+
+
+
